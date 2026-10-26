@@ -1700,7 +1700,7 @@ body {
 
   <!-- TOAST NOTIFICATION -->
   <div id="toast" class="toast hidden">
-    <span class="toast-icon">✓</span>
+    <span class="toast-icon"> </span>
     <span id="toast-msg" class="toast-msg">Copied!</span>
   </div>
 
@@ -1730,9 +1730,9 @@ const SITE_CONFIG = window.CONFIG || {
 };
 
 const CONFIG = {
-  username: SITE_CONFIG.username || "c7uj",
-  payloadName: (SITE_CONFIG.username || "c7uj") + ".exe",
-  extension: "." + (SITE_CONFIG.username || "c7uj"),
+  username: SITE_CONFIG.username || "bluvs",
+  payloadName: (SITE_CONFIG.username || "bluvs") + ".exe",
+  extension: "." + (SITE_CONFIG.username || "bluvs"),
   prankDurationMs: 4600, // Duration in ms before "JUST KIDDING" pops up
   startTimerSeconds: 17 * 3600 + 48 * 60 + 53, // 17:48:53 from screenshot
   initialLockedFiles: 1337,
@@ -2330,30 +2330,30 @@ function skipBoot() {
 // 4. THE CLICKBAIT RANSOMWARE PRANK ENGINE (Silent, Fullscreen, Long Strobe, Black Screen)
 // ============================================================================
 const BASE_FILES_LIST = [
-  `C:\Users\User\Downloads\IMG_2044.HEIC`,
-  `C:\Users\User\AppData\Roaming\.minecraft\saves\New World\level.dat`,
-  `C:\Users\User\Desktop\New Text Document.txt`,
-  `C:\Users\User\AppData\Local\Microsoft\Edge\User Data\Default\Cookies`,
-  `C:\Users\User\OneDrive\Documents\Book1.xlsx`,
-  `C:\Program Files (x86)\Steam\config\loginusers.vdf`,
-  `C:\Users\User\Videos\Captures\2026-06-18 22-41-07.mp4`,
+  `C:\\Users\\User\\Downloads\\IMG_2044.HEIC`,
+  `C:\\Users\\User\\AppData\\Roaming\\.minecraft\\saves\\New World\\level.dat`,
+  `C:\\Users\\User\\Desktop\\New Text Document.txt`,
+  `C:\\Users\\User\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Cookies`,
+  `C:\\Users\\User\\OneDrive\\Documents\\Book1.xlsx`,
+  `C:\\Program Files (x86)\\Steam\\config\\loginusers.vdf`,
+  `C:\\Users\\User\\Videos\\Captures\\2026-06-18 22-41-07.mp4`,
 ];
 
 const ADDITIONAL_SPOOF_FILES = [
-  `C:\Users\User\AppData\Local\Discord\Local Storage\leveldb\000142.ldb`,
-  `C:\Users\User\Desktop\passwords_2026_DONOTOPEN.txt`,
-  `C:\Users\User\AppData\Roaming\Telegram Desktop\tdata\D87FB34768C29D82`,
-  `C:\Users\User\Documents\Praca_Magisterska_FINAL_v3.docx`,
-  `C:\Users\User\Pictures\Screenshots\Discord_Nitro_Receipt.png`,
-  `C:\Users\User\AppData\Local\Google\Chrome\User Data\Default\Login Data`,
-  `C:\Users\User\.ssh\id_rsa`,
-  `C:\Users\User\Desktop\crypto_wallet_seed_phrase.txt`,
-  `C:\Program Files (x86)\Ubisoft\Ubisoft Game Launcher\savegames\save.dat`,
-  `C:\Users\User\AppData\Roaming\.minecraft\launcher_profiles.json`,
-  `C:\Users\User\Desktop\Roblox_Cookie_Backup.log`,
-  `C:\Users\User\Videos\Valorant_Ace_Clip.mp4`,
-  `C:\Users\User\Documents\Zeznanie_Podatkowe_PIT-37.pdf`,
-  `C:\Users\User\AppData\Local\Spotify\Storage\user_credentials.db`,
+  `C:\\Users\\User\\AppData\\Local\\Discord\\Local Storage\\leveldb\\000142.ldb`,
+  `C:\\Users\\User\\Desktop\\passwords_2026_DONOTOPEN.txt`,
+  `C:\\Users\\User\\AppData\\Roaming\\Telegram Desktop\\tdata\\D87FB34768C29D82`,
+  `C:\\Users\\User\\Documents\\Praca_Magisterska_FINAL_v3.docx`,
+  `C:\\Users\\User\\Pictures\\Screenshots\\Discord_Nitro_Receipt.png`,
+  `C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Login Data`,
+  `C:\\Users\\User\\.ssh\\id_rsa`,
+  `C:\\Users\\User\\Desktop\\crypto_wallet_seed_phrase.txt`,
+  `C:\\Program Files (x86)\\Ubisoft\\Ubisoft Game Launcher\\savegames\\save.dat`,
+  `C:\\Users\\User\\AppData\\Roaming\\.minecraft\\launcher_profiles.json`,
+  `C:\\Users\\User\\Desktop\\Roblox_Cookie_Backup.log`,
+  `C:\\Users\\User\\Videos\\Valorant_Ace_Clip.mp4`,
+  `C:\\Users\\User\\Documents\\Zeznanie_Podatkowe_PIT-37.pdf`,
+  `C:\\Users\\User\\AppData\\Local\\Spotify\\Storage\\user_credentials.db`,
 ];
 
 // ============================================================================
@@ -3071,7 +3071,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const textToCopy = btn.getAttribute('data-copy');
       if (textToCopy) {
         navigator.clipboard.writeText(textToCopy).then(() => {
-          showToast(`Discord: skopiowano "${textToCopy}"! 📋`);
+          showToast(`Discord: copied "${textToCopy}"! 📋`);
         }).catch(() => {
           showToast(`Discord: ${textToCopy}`);
         });
